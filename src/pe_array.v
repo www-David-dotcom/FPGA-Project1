@@ -53,7 +53,7 @@ module pe_array #(
     always @(posedge clk) begin
         if(rst) begin
             valid_q <= 1'b0;
-            last_ <= 1'b0;
+            last_q <= 1'b0;
             out_valid <= 1'b0;
         end else begin
             valid_q <= in_valid;

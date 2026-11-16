@@ -16,7 +16,7 @@ module pe_mac(
     // inputs & outputs
     input wire signed[7:0] in_activation,
     input wire signed[7:0] in_weight,
-    output reg signed[7:0] out_sem
+    output reg signed[31:0] out_sum
 );
     wire signed[15:0] product = in_activation * in_weight;
 
